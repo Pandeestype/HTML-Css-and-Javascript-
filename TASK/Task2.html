@@ -1,0 +1,56 @@
+<!-- [Question: -->
+<!-- Create a HTML5 document with a test box and a button then print the text box value -->
+<!-- in the alert when the button pressed. -->
+<!-- NOTE: html filename can be anything, the above program should be in one file.] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            text-transform: lowercase;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            background-image: url('itachi.jpg') ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            animation: change 10s infinite ease-in-out;
+        }
+        h1 {
+            color: white;
+        }
+        @keyframes change{
+            0%
+            { background-image: url('itachi.jpg');}
+           100%
+           {background-image: url('itachi 1.jpg');}
+          
+        }
+       
+
+    </style>
+    <title>Text box and button</title>
+    <script>
+        function text() {
+            var print = document.getElementById("text1").value
+            alert(print)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Text box</h1>
+    <input id="text1" type="text" placeholder="Value" required>
+    <h1>button</h1>
+    <input type="button" value="Submit" onclick="text()">
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!-- Question: -->
+<!-- Create a HTML5 document with 2 textbox and a button then print the difference between 1st text box and 2nd text box -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>difference between text boxes</title>
+    <script src="./Task3.js"></script>
+    <link rel="stylesheet" href="Task3.css">
+</head>
+
+<body>
+    <div class="cen">
+        <from>
+            <div class="base">
+                <h1>difference between numbers</h1>
+            </div>
+        </from>
+        <div class="block">
+            <p class="title">Text box 1</p>
+        <input type="number" id="box1" placeholder="Any Number" required >
+        </div>
+        <div class="block">
+            <p class="title">Text box 2</p> 
+        <input type="number" id="box2" placeholder="Any Number" required>
+        </div>
+        <div class="base">
+        <input type="button" value="Submit" onclick="doc()">
+        </div>
+        <div class=" pr">
+        <p class="title">The result is : <span id="result"></span></p>
+    </div>
+</body>
+
+</html>

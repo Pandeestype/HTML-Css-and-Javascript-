@@ -1,0 +1,60 @@
+<!-- Questions: 4; -->
+<!-- Create 3 files as index.html,app.js,styles.css and create a table with 4 rows and 3 coloumns. -->
+<!-- NOTE:1.Border should be appear, 2.Table should have the heading -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Table</title>
+    <!-- <script src="./app.js"></script> -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <p class="name"><h1>Pandees...</h1></p>
+    <table id="table" Border="3">
+    <tr>
+        <th>subject:</th>
+        <th>
+            Total Mark:
+        </th>
+        <th>mark</th>
+
+    </tr>
+    <tr>
+        <td>HTML</td>
+        <td>100</td>
+        <td>96</td>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>100</td>
+        <td>92</td>
+    </tr>
+    <tr>
+        <td>javascript</td>
+        <td>100</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>React</td>
+        <td>100</td>
+        <td>35</td>
+    </tr>
+    </table>
+    <span id="val"></span>
+    <script>
+        
+    var table = document.getElementById("table"),sumval=0;
+    for(var i=1;i<table.rows.length;i++){
+        sumval=sumval+parseInt(table.rows[i].cells[2].innerHTML);
+    }
+    document.getElementById("val").innerHTML="sum value="+sumval;
+    console.log(sumval)
+    </script>
+    
+</body>
+</html>
